@@ -1,0 +1,81 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+/* Gamer card container */
+.card {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #00ffcc;
+  border-radius: 20px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 255, 204, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Avatar image */
+.avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #00ffcc;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+.avatar img:hover {
+  transform: rotate(5deg);
+}
+
+/* Username styling */
+.username {
+  font-size: 1.8rem;
+  color: #00ffcc;
+  margin-bottom: 5px;
+}
+
+/* Tagline */
+.tagline {
+  font-style: italic;
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+/* Stats section */
+.stats {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+.stats li {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.stats li span {
+  font-size: 0.75rem;
+  color: #aaa;
+}
